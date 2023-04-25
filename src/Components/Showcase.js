@@ -44,7 +44,7 @@ const Showcase = () => {
           </FlexContainer>
         </div>
 
-        <FlexContainer justify="flex-end">
+        <FlexContainer justify="flex-end" >
             <ShowcaseParticleContainer>
                 <ShowcaseImageCard>
                     <img src={ShowcaseImage} alt="Showcase" />
