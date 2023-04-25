@@ -4,6 +4,7 @@ import { Theme } from "./Utils/Theme";
 import { Container, MainBody } from "./Styles/Global.styled";
 import Showcase from "./Components/Showcase";
 import MySkills from "./Components/Skills";
+import MyProjects from "./Components/MyProjects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Container>
         <Showcase />
         <MySkills />
+        <MyProjects />
       </Container>
      </MainBody>
     </ThemeProvider>
