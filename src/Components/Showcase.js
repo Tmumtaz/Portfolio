@@ -44,16 +44,7 @@ const Showcase = () => {
           </FlexContainer>
         </div>
 
-        <FlexContainer justify="flex-end" >
-            <ShowcaseParticleContainer>
-                <ShowcaseImageCard>
-                    <img src={ShowcaseImage} alt="Showcase" />
-                </ShowcaseImageCard>
-                <Particle src={BackgroundImg} alt="Particle" top="-80px" left="20px" rotate="60deg" />
-                <Particle src={BackgroundImg} alt="Particle" top="50px" right="-70px" rotate="0deg" />
-                <Particle src={BackgroundImg} alt="Particle" bottom="10px" left="-70px" rotate="50deg" />
-            </ShowcaseParticleContainer>
-        </FlexContainer>
+       
       </FlexContainer>
     </PaddingContainer>
   );

@@ -33,6 +33,14 @@ const MyProjects = () => {
             projectImage: Project2,
             reverse:false
         },
+        {
+            id:1,
+            projectName: "Booking App",
+            projectDescription: "Description 2",
+            techStack: ['React Native', 'Sass', 'Firebase'],
+            projectImage: Project2,
+            reverse:false
+        },
     ]
 
 
