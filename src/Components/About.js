@@ -22,7 +22,7 @@ import BackgroundImg from "../Assets/particle.png";
 
 const About = () => {
   return (
-    <PaddingContainer id="Home" left="3%" right="10%" top="15%" bottom="10%">
+    <PaddingContainer id="About" left="3%" right="10%" top="15%" bottom="10%">
       <FlexContainer align="center" fullWidthChild>
         <FlexContainer justify="flex-start">
           <ShowcaseParticleContainer>

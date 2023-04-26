@@ -14,7 +14,7 @@ export const FlexContainer = styled.div`
     justify-content: ${(props) => props.justify};
     align-items: ${(props) => props.align || ''};
     gap: ${({ gap }) => gap};
-    flex-direction: ${({rowReverse}) => rowReverse ?  'row-reverse' : 'row'};
+    flex-direction: ${({direction}) => direction};
 
     & > div {
         flex: ${({ fullWidthChild }) => fullWidthChild && 1};

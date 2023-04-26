@@ -6,12 +6,14 @@ import Showcase from "./Components/Showcase";
 import MySkills from "./Components/Skills";
 import MyProjects from "./Components/MyProjects";
 import About from "./Components/About";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <ThemeProvider theme={Theme}>
      <MainBody>
       <Container>
+        <Navbar />
         <Showcase />
         <About />
         <MySkills />
