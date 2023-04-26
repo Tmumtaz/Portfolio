@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import {
   FlexContainer,
@@ -14,6 +15,7 @@ import { SkillsCardContainer, SkillsCard } from "../Styles/Skills.styled";
 // import { SkillsData, SkillsCard } from "../Utils/Data";
 import { FaReact, FaNode, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { FadeInRightVariant, FadeInLeftVariant } from "../Utils/Variants";
 
 const MySkills = () => {
   const SkillsData = [
@@ -41,8 +43,17 @@ const MySkills = () => {
 
   return (
     <PaddingContainer id="Skills" top="10%" bottom="10%" responsiveLeft="1rem" responsiveRight="1rem">
-      <FlexContainer fullWidthChild responsiveFlex responsvieDirection="column">
-        <SkillsCardContainer>
+      <FlexContainer
+       fullWidthChild 
+       responsiveFlex 
+       responsvieDirection="column"
+       >
+        <SkillsCardContainer
+         as={motion.div}
+         variants={FadeInLeftVariant}
+         initial="hidden"
+         whileInView="visible"
+        >
           {SkillsData.map((skill) => (
             <SkillsCard key={skill.id}>
               <IconContainer size="5rem">{skill.icon}</IconContainer>
@@ -54,7 +65,11 @@ const MySkills = () => {
           ))}
         </SkillsCardContainer>
 
-        <div>
+        <motion.div
+          variants={FadeInRightVariant}
+          initial="hidden"
+          whileInView="visible"
+        >
           <Heading as="h2" size="h2">
             Skills
           </Heading>
@@ -77,7 +92,7 @@ const MySkills = () => {
             and sustainable code that can adapt to the changing needs of a
             business.
           </ParaText>
-        </div>
+        </motion.div>
       </FlexContainer>
     </PaddingContainer>
   );

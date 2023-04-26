@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import {
   PaddingContainer,
@@ -9,8 +10,9 @@ import {
   IconContainer,
 } from "../Styles/Global.styled";
 
-import Project from "./Layouts/Project";
+import { FadeInLeftVariant, FadeInTopVariant } from "../Utils/Variants";
 
+import Project from "./Layouts/Project";
 import Project1 from "../Assets/Project1.png";
 import Project2 from "../Assets/Project2.png";
 
@@ -22,7 +24,7 @@ const MyProjects = () => {
       projectDescription: "Description 1",
       techStack: ["ReactJs", "Sass", "Firebase"],
       projectImage: Project1,
-      reverse: false,
+      reverse: true,
     },
     {
       id: 1,
@@ -38,7 +40,7 @@ const MyProjects = () => {
       projectDescription: "Description 2",
       techStack: ["React Native", "Sass", "Firebase"],
       projectImage: Project2,
-      reverse: false,
+      reverse: true,
     },
   ];
 
@@ -51,11 +53,27 @@ const MyProjects = () => {
       responsiveLeft="1rem"
       responsiveRight="1rem"
     >
-      <Heading as="h2" size="h2">
-        Proejcts
+      <Heading
+        as={motion.h2}
+        variants={FadeInTopVariant}
+        size="h2"
+        initial="hidden"
+        whileInView="visible"
+      >
+        Projects
       </Heading>
-      <Heading as="h3" size="h3">
-        <BlueText>What I've Built</BlueText>
+
+      <Heading
+        as={motion.h3}
+        variants={FadeInLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+        size="h3"
+      >
+        What I've<BlueText as={motion.h3}
+        variants={FadeInTopVariant}
+        initial="hidden"
+        whileInView="visible"> Built</BlueText>
       </Heading>
 
       {projectDetails.map((project) => (

@@ -4,24 +4,34 @@ import {
   PaddingContainer,
   FlexContainer,
   Heading,
-  ParaText,
   BlueText,
   IconContainer,
 } from "../Styles/Global.styled";
 
-import { ShowcaseParticleContainer, ShowcaseImageCard, Particle } from "../Styles/Showcase.styled";
+import { motion } from "framer-motion";
 
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
-import ShowcaseImage from '../Assets/showcase-img.png'
-import BackgroundImg from '../Assets/particle.png'
+import { FadeInLeftVariant } from "../Utils/Variants";
 
 const Showcase = () => {
   return (
-    <PaddingContainer id="Home" left="3%" right="10%" top="15%" bottom="10%" responsiveLeft="1rem" responsiveRight="1rem" responsiveTop="8rem">
+    <PaddingContainer
+      id="Home"
+      left="3%"
+      right="10%"
+      top="15%"
+      bottom="10%"
+      responsiveLeft="1rem"
+      responsiveRight="1rem"
+      responsiveTop="8rem"
+    >
       <FlexContainer align="center" fullWidthChild>
-        
-        <div>
+        <motion.div
+          variants={FadeInLeftVariant}
+          initial="hidden"
+          whileInView="visible"
+        >
           <Heading as="h1" size="h1">
             Taimur Mumtaz
           </Heading>
@@ -30,21 +40,17 @@ const Showcase = () => {
             Front End Developer <BlueText>UX/UI Designer</BlueText>
           </Heading>
 
-      
-
-         {/*-- Social Icons-- */}
-          <FlexContainer  gap="40px" responsiveFlex>
-            <IconContainer  size="2rem">
-                <BsLinkedin color="white" />
+          {/*-- Social Icons-- */}
+          <FlexContainer gap="40px" responsiveFlex>
+            <IconContainer size="2rem">
+              <BsLinkedin color="white" />
             </IconContainer>
 
             <IconContainer size="2rem">
-                <BsGithub color="white" />
+              <BsGithub color="white" />
             </IconContainer>
           </FlexContainer>
-        </div>
-
-       
+        </motion.div>
       </FlexContainer>
     </PaddingContainer>
   );
