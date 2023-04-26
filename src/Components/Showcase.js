@@ -18,7 +18,7 @@ import BackgroundImg from '../Assets/particle.png'
 
 const Showcase = () => {
   return (
-    <PaddingContainer id="Home" left="3%" right="10%" top="15%" bottom="10%">
+    <PaddingContainer id="Home" left="3%" right="10%" top="15%" bottom="10%" responsiveLeft="1rem" responsiveRight="1rem" responsiveTop="8rem">
       <FlexContainer align="center" fullWidthChild>
         
         <div>
@@ -33,7 +33,7 @@ const Showcase = () => {
       
 
          {/*-- Social Icons-- */}
-          <FlexContainer  gap="40px">
+          <FlexContainer  gap="40px" responsiveFlex>
             <IconContainer  size="2rem">
                 <BsLinkedin color="white" />
             </IconContainer>

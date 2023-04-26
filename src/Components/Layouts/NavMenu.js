@@ -36,7 +36,7 @@ const NavMenu = ({ setIsOpen }) => {
   return (
     <NavMenuContainer>
       <PaddingContainer left="5%" right="5%" top="2rem">
-        <FlexContainer justify="flex-end">
+        <FlexContainer justify="flex-end" responsiveFlex>
           <MenuIcon onClick={() => setIsOpen(false)}>
             <AiOutlineClose />
           </MenuIcon>
@@ -44,7 +44,7 @@ const NavMenu = ({ setIsOpen }) => {
       </PaddingContainer>
 
       <PaddingContainer top="8%">
-        <FlexContainer direction="column" align="center" justify="center">
+        <FlexContainer direction="column" align="center" justify="center" responsiveFlex>
           {NavLinks.map((link) => (
             <MenuItem key={link.id} href={`#${link.href}`} onClick={() => setIsOpen(false)}>
             {link.name}
