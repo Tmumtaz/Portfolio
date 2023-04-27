@@ -5,12 +5,9 @@ import {
   FlexContainer,
   Heading,
   BlueText,
-  IconContainer,
 } from "../Styles/Global.styled";
 
 import { motion } from "framer-motion";
-
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 import { FadeInLeftVariant, FadeInTopVariant } from "../Utils/Variants";
 
@@ -31,7 +28,7 @@ const Showcase = () => {
           whileInView="visible"
         >
           <Heading as="h1" size="h1">
-          Taimur Mumtaz
+            Taimur Mumtaz
           </Heading>
 
           <Heading
@@ -43,7 +40,7 @@ const Showcase = () => {
             top="1rem"
             bottom="1rem"
           >
-            <BlueText>  Front End Developer</BlueText>
+            <BlueText> Front End Developer</BlueText>
           </Heading>
         </motion.div>
       </FlexContainer>

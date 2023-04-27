@@ -1,14 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import {
-  PaddingContainer,
-  FlexContainer,
-  Heading,
-  ParaText,
-  BlueText,
-  IconContainer,
-} from "../Styles/Global.styled";
+import uuid from "react-uuid";
+import { PaddingContainer, Heading, BlueText } from "../Styles/Global.styled";
 
 import { FadeInLeftVariant, FadeInTopVariant } from "../Utils/Variants";
 
@@ -21,7 +14,7 @@ import Project4 from "../Assets/kanban.png";
 const MyProjects = () => {
   const projectDetails = [
     {
-      id: 0,
+      id: uuid,
       projectName: "E-Commerce Clothing Store",
       projectDescription:
         "This application was created with the goal of providing a modern, intuitive and secure platform for customers to browse and purchase clothing items online. The includes user authentication, payment processing, product management, shopping cart functionality and is fully scalable for any kind of exponential expansion",
@@ -31,7 +24,7 @@ const MyProjects = () => {
       webURL: "https://github.com/Tmumtaz/Kicks",
     },
     {
-      id: 1,
+      id: uuid,
       projectName: "To-Do Application",
       projectDescription:
         "This project had the goal of providing a simple and intuitive tool for managing daily to-do tasks and to-do lists. The application features a user friendly interface, allowing users to easily add, edit and delete tasks.",
@@ -40,7 +33,7 @@ const MyProjects = () => {
       reverse: false,
     },
     {
-      id: 2,
+      id: uuid,
       projectName: "Booking App",
       projectDescription:
         "This web application is a booking system that allows users to schedule appointments online. Users can create an account, view available appointments and book appointments that fit their schedule. The app stores all data securely in Firebase, allowing for easy access and management. With a simple interface, the application makes it easy for both businesses and customers to management appointment efficiently and effectively",
@@ -50,7 +43,7 @@ const MyProjects = () => {
       webURL: "https://github.com/Tmumtaz/O-Slot---Appointment-Booker",
     },
     {
-      id: 3,
+      id: uuid,
       projectName: "Drag 'n Drop",
       projectDescription:
         "This is an interactive web app using Javascript that allows users to drag,drop and edit various items and rearrange then according to their preferences.",

@@ -21,7 +21,6 @@ import {
 import {
   FadeInLeftVariant,
   FadeInRightVariant,
-  FadeInTopVariant,
 } from "../../Utils/Variants";
 
 const Project = ({ data }) => {
