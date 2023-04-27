@@ -114,7 +114,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <Heading as="h1" size="h1">
+          <Heading as="h2" size="h2">
             About <BlueText>Me</BlueText>
           </Heading>
 

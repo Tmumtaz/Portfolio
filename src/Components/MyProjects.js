@@ -16,6 +16,7 @@ import Project from "./Layouts/Project";
 import Project1 from "../Assets/Kicks.png";
 import Project2 from "../Assets/o-slot.png";
 import Project3 from "../Assets/todo.png";
+import Project4 from "../Assets/kanban.png";
 
 const MyProjects = () => {
   const projectDetails = [
@@ -34,18 +35,29 @@ const MyProjects = () => {
       projectName: "To-Do Application",
       projectDescription:
         "This project had the goal of providing a simple and intuitive tool for managing daily to-do tasks and to-do lists. The application features a user friendly interface, allowing users to easily add, edit and delete tasks.",
-      techStack: ["React Native", "Sass", "Firebase"],
+      techStack: ["ReactJs", "Sass", "Firebase"],
       projectImage: Project3,
       reverse: false,
     },
     {
-      id: 1,
+      id: 2,
       projectName: "Booking App",
-      projectDescription: "This web application is a booking system that allows users to schedule appointments online. Users can create an account, view available appointments and book appointments that fit their schedule. The app stores all data securely in Firebase, allowing for easy access and management. With a simple interface, the application makes it easy for both businesses and customers to management appointment efficiently and effectively",
-      techStack: ["React Native", "Sass", "Firebase"],
+      projectDescription:
+        "This web application is a booking system that allows users to schedule appointments online. Users can create an account, view available appointments and book appointments that fit their schedule. The app stores all data securely in Firebase, allowing for easy access and management. With a simple interface, the application makes it easy for both businesses and customers to management appointment efficiently and effectively",
+      techStack: ["ReactJs", "Sass", "Firebase"],
       projectImage: Project2,
       reverse: true,
       webURL: "https://github.com/Tmumtaz/O-Slot---Appointment-Booker",
+    },
+    {
+      id: 3,
+      projectName: "Drag 'n Drop",
+      projectDescription:
+        "This is an interactive web app using Javascript that allows users to drag,drop and edit various items and rearrange then according to their preferences.",
+      techStack: ["Javascript", "CSS"],
+      projectImage: Project4,
+      reverse: false,
+      webURL: "https://github.com/Tmumtaz/Kanban-Drag-and-Drop",
     },
   ];
 
