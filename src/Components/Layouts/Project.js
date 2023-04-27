@@ -18,7 +18,11 @@ import {
   ProjectImage,
 } from "../../Styles/Projects.styles";
 
-import { FadeInLeftVariant, FadeInRightVariant, FadeInTopVariant } from "../../Utils/Variants";
+import {
+  FadeInLeftVariant,
+  FadeInRightVariant,
+  FadeInTopVariant,
+} from "../../Utils/Variants";
 
 const Project = ({ data }) => {
   return (
@@ -28,7 +32,7 @@ const Project = ({ data }) => {
     >
       <ProjectContentContainer
         as={motion.div}
-        variants={data.reverse? FadeInRightVariant: FadeInLeftVariant}
+        variants={data.reverse ? FadeInRightVariant : FadeInLeftVariant}
         initial="hidden"
         whileInView="visible"
       >
@@ -36,10 +40,6 @@ const Project = ({ data }) => {
           <Heading as="h3" size="h3" bottom="1rem">
             {data.projectName}
           </Heading>
-
-          <IconContainer size="2rem">
-            <FaGithub color="white" />
-          </IconContainer>
         </FlexContainer>
 
         <PaddingContainer top="1rem" bottom="1.5rem">
@@ -52,15 +52,22 @@ const Project = ({ data }) => {
 
         <ParaText>{data.projectDescription}</ParaText>
 
-        <Button>Visit Website</Button>
+        <Button>
+          <IconContainer size="2rem" top="0.3rem">
+            <a href={data.webURL}>
+              <FaGithub color="white" />
+            </a>
+          </IconContainer>
+        </Button>
       </ProjectContentContainer>
 
       <ProjectImageContainer
-      //  as={motion.div}
-      //  variants={FadeInTopVariant}
-      //  initial="hidden"
-      //  whileInView="visible"
-      justify={data.reverse ? "flex-start" : "flex-end"}>
+        //  as={motion.div}
+        //  variants={FadeInTopVariant}
+        //  initial="hidden"
+        //  whileInView="visible"
+        justify={data.reverse ? "flex-start" : "flex-end"}
+      >
         <ProjectImage src={data.projectImage} alt={data.projectName} />
       </ProjectImageContainer>
     </FlexContainer>

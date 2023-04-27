@@ -7,6 +7,7 @@ import {
   Heading,
   ParaText,
   BlueText,
+  IconContainer,
 } from "../Styles/Global.styled";
 
 import { FadeInLeftVariant, FadeInRightVariant } from "../Utils/Variants";
@@ -24,7 +25,7 @@ import BackgroundImg from "../Assets/particle.png";
 
 const About = () => {
   return (
-    <PaddingContainer id="About" left="3%" right="10%" top="15%" bottom="10%">
+    <PaddingContainer id="About" left="3%" right="10%" top="15%" bottom="25%">
       <FlexContainer align="center" fullWidthChild>
         <FlexContainer
           as={motion.div}
@@ -88,6 +89,23 @@ const About = () => {
               left="-70px"
               rotate="50deg"
             />
+            <Particle
+              as={motion.img}
+              animate={{
+                x: [0, -200, 0],
+                rotate: 360,
+                scale: [1, 0.5, 1],
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+              }}
+              src={BackgroundImg}
+              alt="Particle"
+              bottom="-80px"
+              right="10px"
+              rotate="60deg"
+            />
           </ShowcaseParticleContainer>
         </FlexContainer>
 
@@ -97,14 +115,35 @@ const About = () => {
           whileInView="visible"
         >
           <Heading as="h1" size="h1">
-            <BlueText>About</BlueText> Me
+            About <BlueText>Me</BlueText>
           </Heading>
 
           <ParaText as="p" top="2rem" bottom="4rem">
             Hello, my name is Taimur Mumtaz and I am a front-end developer who
-            loves creating and designing user-friendly websites and web
-            applications.
+            loves creating and designing scalable, seamlessly integrated,
+            user-friendly websites and web applications.
           </ParaText>
+          <Heading as="h4" size="h4">
+            We can do so much together. Lets talk: 
+          </Heading>
+
+          <ParaText><strong>Email Me: </strong>taimur.mumtaz0@gmail.com</ParaText>
+          <ParaText><strong>Call Me: </strong>+1 519 701 1478</ParaText>
+          
+          <ParaText><strong> Social Media:</strong></ParaText>
+          <FlexContainer gap="40px" responsiveFlex>
+            <IconContainer size="2rem" top="1rem">
+              <a href="https://www.linkedin.com/feed/">
+              <BsLinkedin color="white" />
+              </a>
+            </IconContainer>
+
+            <IconContainer size="2rem" top="1rem">
+              <a href="https://github.com/Tmumtaz">
+              <BsGithub color="white" />
+              </a>
+            </IconContainer>
+          </FlexContainer>
         </motion.div>
       </FlexContainer>
     </PaddingContainer>

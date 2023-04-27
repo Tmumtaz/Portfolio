@@ -24,7 +24,7 @@ const Navbar = () => {
             <PaddingContainer top="1.2rem" bottom="1.2rem" responsiveLeft="1rem" responsiveRight="1rem">
                 <Container>
                     <FlexContainer justify="space-between" responsiveFlex>
-                        <Logo>T<BlueText>M</BlueText></Logo>
+                        <a style={{ textDecoration: 'none' }} href="#Home"><Logo>T<BlueText>M</BlueText></Logo></a>
 
                         <MenuIcon onClick={() => { setIsOpen(true)}}>
                             <GiHamburgerMenu />

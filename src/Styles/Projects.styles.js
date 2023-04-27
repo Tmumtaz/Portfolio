@@ -23,9 +23,9 @@ export const TechStackCard = styled.span`
 
 export const ProjectImage = styled.img`
     border: 1px solid #fff;
-    width: 80%;
+    width: 90%;
     height: 300px;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 10px;
 
     @media ${({ theme }) => theme.breakpoints.mobile}{

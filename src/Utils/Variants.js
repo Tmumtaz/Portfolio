@@ -8,7 +8,8 @@ export const FadeInLeftVariant = {
         opacity:1,
         transition: {
             type:'tween',
-            duration: 1
+            duration: 1.2,
+            delay:0.2
         }
     }
 }
@@ -22,7 +23,8 @@ export const FadeInRightVariant = {
         opacity:1,
         transition: {
             type:'tween',
-            duration: 1
+            duration: 1.2,
+            delay:0.2
         }
     }
 }
@@ -37,7 +39,8 @@ export const FadeInTopVariant = {
         opacity:1,
         transition: {
             type:'tween',
-            duration: 1
+            duration: 1.2,
+            delay:0.3
         }
     }
 }

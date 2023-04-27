@@ -42,15 +42,46 @@ const MySkills = () => {
   ];
 
   return (
-    <PaddingContainer id="Skills" top="10%" bottom="10%" responsiveLeft="1rem" responsiveRight="1rem">
+    <PaddingContainer id="Skills" top="5%" bottom="20%" responsiveLeft="1rem" responsiveRight="1rem">
       <FlexContainer
        fullWidthChild 
        responsiveFlex 
        responsvieDirection="column"
        >
+     
+
+        <motion.div
+          variants={FadeInLeftVariant}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <Heading as="h2" size="h2">
+            Skills
+          </Heading>
+
+          <Heading as="h3" size="h3">
+            <BlueText>Projects Built With:</BlueText>
+          </Heading>
+
+          <ParaText top="2rem" bottom="1.5rem">
+            As a developer, I have a wide range of experience in front-end web
+            development. I am proficient in JavaScript, React, Angular, HTML,
+            and CSS. My strong experience in building responsive and dynamic
+            user interfaces using React and Redux has allowed me to create
+            engaging and interactive web applications.
+          </ParaText>
+
+          <ParaText>
+            I have experience in using React for building scalable and
+            maintainable applications, allowing me to create efficient
+            and sustainable code that can adapt to the changing needs of a
+            business.
+          </ParaText>
+        </motion.div>
+
         <SkillsCardContainer
          as={motion.div}
-         variants={FadeInLeftVariant}
+         variants={FadeInRightVariant}
          initial="hidden"
          whileInView="visible"
         >
@@ -64,35 +95,6 @@ const MySkills = () => {
             </SkillsCard>
           ))}
         </SkillsCardContainer>
-
-        <motion.div
-          variants={FadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <Heading as="h2" size="h2">
-            Skills
-          </Heading>
-
-          <Heading as="h3" size="h3">
-            <BlueText>Projects Built With</BlueText>
-          </Heading>
-
-          <ParaText top="2rem" bottom="1.5rem">
-            As a developer, I have a wide range of experience in front-end web
-            development. I am proficient in JavaScript, React, Angular, HTML,
-            and CSS. My strong experience in building responsive and dynamic
-            user interfaces using React and Redux has allowed me to create
-            engaging and interactive web applications.
-          </ParaText>
-
-          <ParaText>
-            I have experience in using React for building scalable and
-            maintainable applications. This has allowed me to create efficient
-            and sustainable code that can adapt to the changing needs of a
-            business.
-          </ParaText>
-        </motion.div>
       </FlexContainer>
     </PaddingContainer>
   );
