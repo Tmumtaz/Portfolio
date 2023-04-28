@@ -124,7 +124,7 @@ const About = () => {
             user-friendly websites and web applications.
           </ParaText>
           <Heading as="h4" size="h4">
-            We can do so much together. Lets talk: 
+            We can do so much together. <BlueText>Lets talk: </BlueText>
           </Heading>
 
           <ParaText><strong>Email Me: </strong>taimur.mumtaz0@gmail.com</ParaText>

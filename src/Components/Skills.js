@@ -22,22 +22,22 @@ const MySkills = () => {
     {
       id: 0,
       tech: "React JS",
-      icon: <FaReact color="white" />,
+      icon: <FaReact color="#7eadfc" />,
     },
     {
       id: 1,
       tech: "Node JS",
-      icon: <FaNode color="white" />,
+      icon: <FaNode color="#7eadfc" />,
     },
     {
       id: 2,
       tech: "CSS",
-      icon: <FaCss3Alt color="white" />,
+      icon: <FaCss3Alt color="#7eadfc" />,
     },
     {
       id: 3,
       tech: "Javascript",
-      icon: <SiJavascript color="white" />,
+      icon: <SiJavascript color="#7eadfc" />,
     },
   ];
 

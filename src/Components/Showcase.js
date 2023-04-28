@@ -40,7 +40,7 @@ const Showcase = () => {
             top="1rem"
             bottom="1rem"
           >
-            <BlueText> Front End Developer</BlueText>
+            <BlueText>Front End Developer</BlueText>
           </Heading>
         </motion.div>
       </FlexContainer>
