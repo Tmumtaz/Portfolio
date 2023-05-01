@@ -93,6 +93,7 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
   line-height: 2rem;
+  font-size: ${({ size }) => size};
 `;
 
 export const Particle = styled.img`
@@ -124,6 +125,8 @@ export const IconContainer = styled.div`
     cursor: pointer;
   }
 `;
+
+
 
 export const Button = styled.a`
   display: inline-block;

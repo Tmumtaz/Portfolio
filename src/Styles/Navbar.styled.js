@@ -25,6 +25,10 @@ export const MenuIcon = styled.a`
     transition: all 0.2s ease;
     display:flex;
     align-items: center;
+
+    &:hover {
+    color:#7eadfc;
+  }
 `;
 
 export const NavMenuContainer = styled.div`
@@ -43,4 +47,9 @@ export const MenuItem = styled.a`
     margin-top:3rem;
     cursor: pointer;
     text-decoration:none;
+    transition: all 0.1s ease;
+
+    &:hover {
+    color:#7eadfc;
+  }
 `

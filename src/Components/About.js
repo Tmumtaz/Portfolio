@@ -7,7 +7,6 @@ import {
   Heading,
   ParaText,
   BlueText,
-  IconContainer,
 } from "../Styles/Global.styled";
 
 import { FadeInLeftVariant, FadeInRightVariant } from "../Utils/Variants";
@@ -17,8 +16,6 @@ import {
   ShowcaseImageCard,
   Particle,
 } from "../Styles/Showcase.styled";
-
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 import ShowcaseImage from "../Assets/About.png";
 import BackgroundImg from "../Assets/particle.png";
@@ -118,32 +115,11 @@ const About = () => {
             About <BlueText>Me</BlueText>
           </Heading>
 
-          <ParaText as="p" top="2rem" bottom="4rem">
+          <ParaText as="p" top="2rem" bottom="4rem" size="1.2rem">
             Hello, my name is Taimur Mumtaz and I am a front-end developer who
             loves creating and designing scalable, seamlessly integrated,
             user-friendly websites and web applications.
           </ParaText>
-          <Heading as="h4" size="h4">
-            We can do so much together. <BlueText>Lets talk: </BlueText>
-          </Heading>
-
-          <ParaText><strong>Email Me: </strong>taimur.mumtaz0@gmail.com</ParaText>
-          <ParaText><strong>Call Me: </strong>+1 519 701 1478</ParaText>
-          
-          <ParaText><strong> Social Media:</strong></ParaText>
-          <FlexContainer gap="40px" responsiveFlex>
-            <IconContainer size="2rem" top="1rem">
-              <a href="https://www.linkedin.com/feed/">
-              <BsLinkedin color="white" />
-              </a>
-            </IconContainer>
-
-            <IconContainer size="2rem" top="1rem">
-              <a href="https://github.com/Tmumtaz">
-              <BsGithub color="white" />
-              </a>
-            </IconContainer>
-          </FlexContainer>
         </motion.div>
       </FlexContainer>
     </PaddingContainer>

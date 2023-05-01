@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from "react-uuid";
 
 import { PaddingContainer, FlexContainer } from "../../Styles/Global.styled";
 
@@ -13,24 +14,29 @@ import {
 const NavMenu = ({ setIsOpen }) => {
   const NavLinks = [
     {
-      id:0,
+      id:uuid,
       name:'Home',
       href:'Home'
     },
     {
-      id:1,
+      id:uuid,
       name:'About',
       href:'About'
     },
     {
-      id:2,
+      id:uuid,
       name:'Skills',
       href:'Skills'
     },
     {
-      id:3,
+      id:uuid,
       name:'Projects',
       href:'Projects'
+    },
+    {
+      id:uuid,
+      name:'Contact',
+      href:'Contact'
     },
   ]
   return (
