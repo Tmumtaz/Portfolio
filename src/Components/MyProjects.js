@@ -10,6 +10,7 @@ import Project1 from "../Assets/Kicks.png";
 import Project2 from "../Assets/o-slot.png";
 import Project3 from "../Assets/todo.png";
 import Project4 from "../Assets/kanban.png";
+import Project5 from "../Assets/clipIt.png";
 
 const MyProjects = () => {
   const projectDetails = [
@@ -25,12 +26,13 @@ const MyProjects = () => {
     },
     {
       id: uuid,
-      projectName: "To-Do Application",
+      projectName: "Clip-It (In Progress)",
       projectDescription:
-        "This project had the goal of providing a simple and intuitive tool for managing daily to-do tasks and to-do lists. The application features a user friendly interface, allowing users to easily add, edit and delete tasks.",
-      techStack: ["ReactJs", "Sass", "Firebase"],
-      projectImage: Project3,
+        "This is a web application for gamers to upload,store and share their gaming highlights. Users will be able to upload videos using web assebemly. Once uploaded, users will be able to edit, delete or sort through their uploads.",
+      techStack: ["Angular", "Angular CLI", "Web Assembely", "Firebase",],
+      projectImage: Project5,
       reverse: false,
+      webURL: "https://github.com/Tmumtaz/Clip-It"
     },
     {
       id: uuid,
@@ -51,6 +53,15 @@ const MyProjects = () => {
       projectImage: Project4,
       reverse: false,
       webURL: "https://github.com/Tmumtaz/Kanban-Drag-and-Drop",
+    },
+    {
+      id: uuid,
+      projectName: "To-Do Application",
+      projectDescription:
+        "This project had the goal of providing a simple and intuitive tool for managing daily to-do tasks and to-do lists. The application features a user friendly interface, allowing users to easily add, edit and delete tasks.",
+      techStack: ["ReactJs", "Sass", "Firebase"],
+      projectImage: Project3,
+      reverse: true,
     },
   ];
 
