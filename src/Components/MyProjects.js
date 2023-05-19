@@ -16,23 +16,23 @@ const MyProjects = () => {
   const projectDetails = [
     {
       id: uuid,
+      projectName: "Clip-It (In Progress)",
+      projectDescription:
+        "This is a web application for gamers to upload,store and share their gaming highlights. Users will be able to upload videos using web assebemly. Once uploaded, users will be able to edit, delete or sort through their uploads.",
+      techStack: ["Angular", "Web Assembely", "Firebase","RXJS","FFmpeg"],
+      projectImage: Project5,
+      reverse: true,
+      webURL: "https://github.com/Tmumtaz/Clip-It"
+    },
+    {
+      id: uuid,
       projectName: "E-Commerce Clothing Store",
       projectDescription:
         "This application was created with the goal of providing a modern, intuitive and secure platform for customers to browse and purchase clothing items online. The includes user authentication, payment processing, product management, shopping cart functionality and is fully scalable for any kind of exponential expansion",
       techStack: ["ReactJs", "Sass", "Firebase", "Stripe API", "Redux"],
       projectImage: Project1,
-      reverse: true,
-      webURL: "https://github.com/Tmumtaz/Kicks",
-    },
-    {
-      id: uuid,
-      projectName: "Clip-It (In Progress)",
-      projectDescription:
-        "This is a web application for gamers to upload,store and share their gaming highlights. Users will be able to upload videos using web assebemly. Once uploaded, users will be able to edit, delete or sort through their uploads.",
-      techStack: ["Angular", "Angular CLI", "Web Assembely", "Firebase",],
-      projectImage: Project5,
       reverse: false,
-      webURL: "https://github.com/Tmumtaz/Clip-It"
+      webURL: "https://github.com/Tmumtaz/Kicks",
     },
     {
       id: uuid,
