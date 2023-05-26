@@ -16,7 +16,7 @@ const MyProjects = () => {
   const projectDetails = [
     {
       id: uuid,
-      projectName: "Clip-It (In Progress)",
+      projectName: "Clip-It",
       projectDescription:
         "This is a web application for gamers to upload,store and share their gaming highlights. Users will be able to upload videos using web assebemly. Once uploaded, users will be able to edit, delete or sort through their uploads.",
       techStack: ["Angular", "Web Assembely", "Firebase","RXJS","FFmpeg"],
